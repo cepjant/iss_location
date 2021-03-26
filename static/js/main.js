@@ -25,7 +25,7 @@ $(document).ready(function(){
         latitude = issPosition.latitude;
 
         var mapOptions = {
-            center: new google.maps.LatLng(longitude, latitude),
+            center: new google.maps.LatLng(latitude, longitude),
             zoom: 2,
             mapTypeId: 'terrain'
         };
@@ -50,7 +50,7 @@ $(document).ready(function(){
 
 
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(longitude, latitude),
+            position: new google.maps.LatLng(latitude, longitude),
             title: 'Marker',
             map: map,
             draggable: true
